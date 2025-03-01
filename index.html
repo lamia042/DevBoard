@@ -18,16 +18,16 @@
             <div class="flex gap-5">
                 <div class="flex rounded-full bg-[#edf1fc] gap-3 p-3">
                     <img class="h-6" src="./assets/checkbox.png" alt="">
-                    <p class="font-bold">23</p>
+                    <p id="checkbox-number" class="font-bold">23</p>
                 </div>
-                <button class="rounded-full bg-[#edf1fc] gap-3 p-3"><img class="w-6 h-auto " src="./assets/theme-btn.png" alt=""></button>
+                <button id="change-color" class="rounded-full bg-[#edf1fc] gap-3 p-3"><img class="w-6 h-auto " src="./assets/theme-btn.png" alt=""></button>
             </div>
 
         </div>
     </header>
-    <main class="bg-white border-none rounded-lg mx-16 my-5 p-3">
-        <div class="w-full grid grid-cols-3 gap-3">
-            <div class="col-span-2">
+    <main class="border-none rounded-lg mx-16 my-5">
+        <div class=" w-full grid grid-cols-3 gap-3">
+            <div class="bg-white p-3 rounded-lg col-span-2">
                 <div class="grid grid-cols-7 gap-3">
                     <div class="flex bg-[#f3f6fd] rounded-lg p-4 col-span-2  items-center text-center">
                         <div class="p-3 bg-white rounded-full h-12">
@@ -35,15 +35,17 @@
                         </div>
                         <div class="ml-3 text-left">
                             <p class="text-sm">Task Assigned</p>
-                            <p class="text-lg font-bold">05</p>
+                            <p id="task-number" class="text-lg font-bold">05</p>
                         </div>
                     </div>
                     <div id="discover-id" class="bg-gradient-to-l to-[#3752FD] from-[#9BA8F8] rounded-lg flex items-center p-6 col-span-3">
                         <img class="w-12 h-12 mr-4" src="./assets/board.png" alt="">
                         <p class="text-xl text-white font-semibold">Discover Something New Today!</p>
                     </div>
-                    <div class="bg-[#f3f6fd] rounded-lg flex items-center justify-center p-4 col-span-2">
+                    <div class="bg-[#f3f6fd] rounded-lg flex gap-3 items-center justify-center p-4 col-span-2">
                         <img class="w-10 h-10" src="./assets/calender.png" alt="">
+                        <p id="current-date" class="font-semibold text-xl">Wed ,<br>
+                            Jul 28 2025 </p>
                     </div>
                 </div>
                 <hr class="border-dashed text-gray-300 my-4">
@@ -64,7 +66,7 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                            <button class="completed-btn bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
                                 Completed
                             </button>
                         </div>
@@ -83,7 +85,7 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                            <button class="completed-btn bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
                                 Completed
                             </button>
                         </div>
@@ -103,7 +105,7 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                            <button class="completed-btn bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
                                 Completed
                             </button>
                         </div>
@@ -122,7 +124,7 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                            <button class="completed-btn bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
                                 Completed
                             </button>
                         </div>
@@ -141,7 +143,7 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                            <button class="completed-btn bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
                                 Completed
                             </button>
                         </div>
@@ -160,7 +162,7 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                            <button class="completed-btn bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
                                 Completed
                             </button>
                         </div>
@@ -190,5 +192,7 @@
         
     </main>
     <script src="./script/blogAdjust.js"></script>
+    <script src="./script/changeColor.js"></script>
+    <script src="./script/completed.js"></script>
 </body>
 </html>
