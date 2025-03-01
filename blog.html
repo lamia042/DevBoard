@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#f3f6fd] pt-1">
+    <header class="bg-white border-none rounded-lg mx-16 my-5 p-3">
+        <div class="flex justify-between">
+            <div class="flex gap-2">
+                <img class="w-10 h-10" src="./assets/logo.png" alt="">
+                <p class="text-xl mt-1"><span>Dev</span><span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex gap-5">
+                <button id="back-desk" class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">Back to Desk</button>
+            </div>
+
+        </div>
+    </header>
+    <main class=" mx-16 mb-5 pb-5">
+        <p class="items-center text-center text-2xl font-bold">Blogs</p>
+        <section>
+            <div class="bg-white rounded-lg mt-5 p-5">
+                <p class="text-xl font-bold mb-4">Question-1: What are the different ways to select an element in the DOM?</p>
+                <hr class="border-dashed text-gray-300">
+                <ul class="list-disc pl-5 text-gray-500 text-lg mt-3">
+                    <li>Using getElementById.</li>
+                    <li>Using getElementsByClassName.</li>
+                    <li>Using getElementsByTagName.</li>
+                    <li>Using querySelector.</li>
+                    <li>Using querySelectorAll</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-lg mt-5 p-5">
+                <p class="text-xl font-bold mb-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                <hr class="border-dashed text-gray-300">
+                <p class="text-gray-500 text-lg mt-3">The outerText property of the HTMLElement interface returns the same value as HTMLElement. innerText</p>
+            </div>
+            <div class="bg-white rounded-lg mt-5 p-5">
+                <p class="text-xl font-bold mb-4">Question-3: What is event delegation in the DOM?</p>
+                <hr class="border-dashed text-gray-300">
+                <p class="text-gray-500 text-lg mt-3">Event delegation is a technique in JavaScript where a single event listener is attached to a parent element instead of attaching event listeners to multiple child elements.</p>
+            </div>
+            <div class="bg-white rounded-lg mt-5 p-5">
+                <p class="text-xl font-bold mb-4">Question-4: What is event bubbling in the DOM?</p>
+                <hr class="border-dashed text-gray-300">
+                <p class="text-gray-500 text-lg mt-3">Event bubbling is a propagation mechanism in the DOM where an event, such as a click or a keyboard event, is first triggered on the target element that initiated the event and then propagates upward (bubbles) through the DOM tree to the root of the document.</p>
+            </div>
+            <div class="bg-white rounded-lg mt-5 p-5">
+                <p class="text-xl font-bold mb-4">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <hr class="border-dashed text-gray-300">
+                <p class="text-gray-500 text-lg mt-3">You can create a new element using the document.createElement() method</p>
+                <p class="text-gray-500 text-lg">You can add the newly created element to an existing element using appendChild(), append(), insertBefore(), insertAdjacentHTML()</p>
+                <p class="text-gray-500 text-lg">remove() removes an element from the document.</p>
+            </div>
+        </section>
+    </main>
+    <script src="./script/blogAdjust.js"></script>
+</body>
+</html>

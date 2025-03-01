@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#f3f6fd] pt-1">
+    <header class="bg-white border-none rounded-lg mx-16 my-5 p-3">
+        <div class="flex justify-between">
+            <div class="flex gap-2">
+                <img class="w-10 h-10" src="./assets/logo.png" alt="">
+                <p class="text-xl mt-3"><span>Dev</span><span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex gap-5">
+                <div class="flex rounded-full bg-[#edf1fc] gap-3 p-3">
+                    <img class="h-6" src="./assets/checkbox.png" alt="">
+                    <p class="font-bold">23</p>
+                </div>
+                <button class="rounded-full bg-[#edf1fc] gap-3 p-3"><img class="w-6 h-auto " src="./assets/theme-btn.png" alt=""></button>
+            </div>
+
+        </div>
+    </header>
+    <main class="bg-white border-none rounded-lg mx-16 my-5 p-3">
+        <div class="w-full grid grid-cols-3 gap-3">
+            <div class="col-span-2">
+                <div class="grid grid-cols-7 gap-3">
+                    <div class="flex bg-[#f3f6fd] rounded-lg p-4 col-span-2  items-center text-center">
+                        <div class="p-3 bg-white rounded-full h-12">
+                            <img class="h-6" src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div class="ml-3 text-left">
+                            <p class="text-sm">Task Assigned</p>
+                            <p class="text-lg font-bold">05</p>
+                        </div>
+                    </div>
+                    <div id="discover-id" class="bg-gradient-to-l to-[#3752FD] from-[#9BA8F8] rounded-lg flex items-center p-6 col-span-3">
+                        <img class="w-12 h-12 mr-4" src="./assets/board.png" alt="">
+                        <p class="text-xl text-white font-semibold">Discover Something New Today!</p>
+                    </div>
+                    <div class="bg-[#f3f6fd] rounded-lg flex items-center justify-center p-4 col-span-2">
+                        <img class="w-10 h-10" src="./assets/calender.png" alt="">
+                    </div>
+                </div>
+                <hr class="border-dashed text-gray-300 my-4">
+    
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="max-w-xs bg-[#f3f6fd] rounded-lg p-5">
+                        <span class="bg-white text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">ShopEase</span>
+                        <h2 class="text-lg font-bold text-gray-900 mt-2">Fix Mobile Button Issue</h2>
+                        <p class="text-gray-500 text-sm bg-white p-2 rounded-md mt-2 mb-2 
+                        overflow-hidden text-ellipsis break-words 
+                        line-clamp-2 h-[3rem]">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                        </p>
+                        <hr class="border-dashed text-gray-300">
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                    <div class="max-w-xs bg-[#f3f6fd] rounded-lg p-5">
+                        <span class="bg-white text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">CloudSync</span>
+                        <h2 class="text-lg font-bold text-gray-900 mt-2">Add Dark Mode</h2>
+                        <p class="text-gray-500 text-sm bg-white p-2 rounded-md mt-2 mb-2 
+                        overflow-hidden text-ellipsis break-words 
+                        line-clamp-2 h-[3rem]">
+                        Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                        </p>
+                        <hr class="border-dashed text-gray-300">
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                    <div class="max-w-xs bg-[#f3f6fd] rounded-lg p-5">
+                        <span class="bg-white text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">SwiftPay</span>
+                        <h2 class="text-lg font-bold text-gray-900 mt-2">Optimize  Home page </h2>
+                        <p class="text-gray-500 text-sm bg-white p-2 rounded-md mt-2 mb-2 
+                        overflow-hidden text-ellipsis break-words 
+                        line-clamp-2 h-[3rem]">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly
+                        </p>
+                        <hr class="border-dashed text-gray-300">
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                    <div class="max-w-xs bg-[#f3f6fd] rounded-lg p-5">
+                        <span class="bg-white text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">Meta</span>
+                        <h2 class="text-lg font-bold text-gray-900 mt-2">Add new emoji 🤲</h2>
+                        <p class="text-gray-500 text-sm bg-white p-2 rounded-md mt-2 mb-2 
+                        overflow-hidden text-ellipsis break-words 
+                        line-clamp-2 h-[3rem]">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                        </p>
+                        <hr class="border-dashed text-gray-300">
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                    <div class="max-w-xs bg-[#f3f6fd] rounded-lg p-5">
+                        <span class="bg-white text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">Google LLC</span>
+                        <h2 class="text-lg font-bold text-gray-900 mt-2">Integrate OpenAI API </h2>
+                        <p class="text-gray-500 text-sm bg-white p-2 rounded-md mt-2 mb-2 
+                        overflow-hidden text-ellipsis break-words 
+                        line-clamp-2 h-[3rem]">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                        </p>
+                        <hr class="border-dashed text-gray-300">
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                    <div class="max-w-xs bg-[#f3f6fd] rounded-lg p-5">
+                        <span class="bg-white text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">Glassdoar</span>
+                        <h2 class="text-lg font-bold text-gray-900 mt-2">Improve Job searching </h2>
+                        <p class="text-gray-500 text-sm bg-white p-2 rounded-md mt-2 mb-2 
+                        overflow-hidden text-ellipsis break-words 
+                        line-clamp-2 h-[3rem]">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                        </p>
+                        <hr class="border-dashed text-gray-300">
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-semibold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md">
+                                Completed
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+   
+            <div class="w-full bg-white rounded-lg p-5 flex flex-col items-center text-center">
+                <div class="flex  gap-3">
+                    <img src="./assets/activity.png" alt="Activity Log Icon" class="h-5 mt-1">
+                    <h2 class="text-lg font-bold text-gray-900">Activity Log</h2>
+                </div>
+                <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md mt-3">
+                    Clear History
+                </button>
+            
+                <div class="mt-4 space-y-3 max-h-[300px] overflow-y-auto">
+                    <div class="bg-gray-100 text-gray-700 text-sm p-3 rounded-md shadow-sm">
+                        You have completed the task <b>Add Dark Mode</b> at 12:48:15 PM
+                    </div>
+                    <div class="bg-gray-100 text-gray-700 text-sm p-3 rounded-md shadow-sm">
+                        You have completed the task <b>Add Dark Mode</b> at 12:48:15 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="./script/blogAdjust.js"></script>
+</body>
+</html>
