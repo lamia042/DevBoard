@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#f3f6fd] pt-1">
-    <header class="bg-white border-none rounded-lg mx-16 my-5 p-3">
+    <header class="bg-white border-none rounded-lg mx-26 my-5 p-3">
         <div class="flex justify-between">
             <div class="flex gap-2">
                 <img class="w-10 h-10" src="./assets/logo.png" alt="">
@@ -25,7 +25,7 @@
 
         </div>
     </header>
-    <main class="border-none rounded-lg mx-16 my-5">
+    <main class="border-none rounded-lg mx-26 my-5">
         <div class=" w-full grid grid-cols-3 gap-3">
             <div class="bg-white p-3 rounded-lg col-span-2">
                 <div class="grid grid-cols-7 gap-3">
@@ -35,7 +35,7 @@
                         </div>
                         <div class="ml-3 text-left">
                             <p class="text-sm">Task Assigned</p>
-                            <p id="task-number" class="text-lg font-bold">05</p>
+                            <p id="task-number" class="text-lg font-bold">06</p>
                         </div>
                     </div>
                     <div id="discover-id" class="bg-gradient-to-l to-[#3752FD] from-[#9BA8F8] rounded-lg flex items-center p-6 col-span-3">
@@ -44,8 +44,11 @@
                     </div>
                     <div class="bg-[#f3f6fd] rounded-lg flex gap-3 items-center justify-center p-4 col-span-2">
                         <img class="w-10 h-10" src="./assets/calender.png" alt="">
-                        <p id="current-date" class="font-semibold text-xl">Wed ,<br>
+                        <div>
+                            <p id="current-day" class="text-xl"> Sunday</p>
+                            <p id="current-date" class="font-semibold text-xl">
                             Jul 28 2025 </p>
+                        </div>
                     </div>
                 </div>
                 <hr class="border-dashed text-gray-300 my-4">
@@ -175,17 +178,17 @@
                     <img src="./assets/activity.png" alt="Activity Log Icon" class="h-5 mt-1">
                     <h2 class="text-lg font-bold text-gray-900">Activity Log</h2>
                 </div>
-                <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md mt-3">
+                <button id="clear-history" class="bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-md mt-3">
                     Clear History
                 </button>
             
+                <hr class="border-dashed border-gray-300 w-full my-5 mx-2">
+
                 <div class="mt-4 space-y-3 max-h-[300px] overflow-y-auto">
-                    <div class="bg-gray-100 text-gray-700 text-sm p-3 rounded-md shadow-sm">
-                        You have completed the task <b>Add Dark Mode</b> at 12:48:15 PM
+                    <div id="task-history">
+                        You have completed the task <b id="task-name">Add Dark Mode</b><span id="time-id">time</span>
                     </div>
-                    <div class="bg-gray-100 text-gray-700 text-sm p-3 rounded-md shadow-sm">
-                        You have completed the task <b>Add Dark Mode</b> at 12:48:15 PM
-                    </div>
+                    
                 </div>
             </div>
         </div>
